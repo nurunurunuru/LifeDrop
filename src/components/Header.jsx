@@ -23,7 +23,7 @@ const Header = () => {
   const logout = () =>{
     localStorage.removeItem('token')
     setToken('')
-    // setCartItems({})
+    setCartItems({})
     navigate('/login')
   }
   return (
@@ -60,22 +60,23 @@ const Header = () => {
               <FaBarsStaggered onClick={toggleMenu} className='xl:hidden cursor-pointer text-2xl'/>
             )}
             <div>
-              <FaSearch onClick={()=>setShowSearch((prev)=> !prev)} className='text-xl cursor-pointer '/>
+              <FaSearch onClick={()=>setShowSearch((prev)=> !prev)} className='text-xl cursor-pointer'/>
             </div>
             {/* <Link to={'/cart'} className='flex relative'>
-            <GiHeartDrop className='text-[25px] rounded-full bg-gradient-to-tr from-red-500 to-pink-500 shadow-lg'/>
+            <GiBeachBag className='text-[25px]'/>
+            <span className='bg-cyan-300 text-white medium-14 absolute right-0.5 -top-3 flexCenter w-5 h-5 rounded-full shadow-inner'>{getCartCount()}</span>
             </Link> */}
 
             <div className='group relative'>
               <div onClick={() => !token && navigate('/login')}>
-                <FaRegCircleUser className='text-2xl cursor-pointer rounded-full bg-gradient-to-tr from-red-500 to-pink-500 shadow-lg'/>
+                <FaRegCircleUser className='text-2xl cursor-pointer'/>
               </div>
               {token && <>
               <ul className='bg-white shadow-sm p-3 w-32 ring-1 ring-slate-900/15 rounded absolute right-0 hidden group-hover:flex flex-col '>
-                <li onClick={() => navigate('/orders')} className='flexBetween cursor-pointer'>
+                {/* <li onClick={() => navigate('/orders')} className='flexBetween cursor-pointer'>
                   <p>Orders</p>
-                  <TbArrowNarrowRight className='text-[19px] opacity-50 '/>
-                </li>
+                  <TbArrowNarrowRight className='text-[19px] opacity-50'/>
+                </li> */}
                 <hr className='my-2'/>
                 <li onClick={logout} className='flexBetween cursor-pointer'>
                   <p>Logout</p>
