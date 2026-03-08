@@ -2,59 +2,70 @@ import React from 'react';
 import Title from './Title';
 import { FaFacebookF, FaWhatsapp } from 'react-icons/fa';
 
+// Import all images
+import Bondhu from '../assets/Bondhu.jpg';
+import Kowshik from '../assets/kowshik.jpg';
+import Sakib from '../assets/Sakib.jpg';
+import Tahmid from '../assets/Tahmid.jpg';
+import Mushi from '../assets/Mushi.jpg';
+import Rafi from '../assets/Rafi.jpg';
+import Sajib from '../assets/Sajib.jpg';
+import Sinthol from '../assets/Sinthol.jpg';
+import Saad from '../assets/Saad.jpg';
+
 const Features = () => {
   const admins = [
     {
       name: "Mridol Mondal",
-      image: "/src/assets/Bondhu.jpg",
+      image: Bondhu,
       facebook: "https://www.facebook.com/mridol.ms",
       whatsapp: "https://wa.me/8801234567891"
     },
     {
       name: "Kowshik Saha",
-      image: "/src/assets/Kowshik.jpg",
+      image: Kowshik,
       facebook: "https://www.facebook.com/kowshik.saha.965",
       whatsapp: "https://wa.me/8801779991467"
     },
     {
       name: "Sakibur",
-      image: "/src/assets/Sakib.jpg",
+      image: Sakib,
       facebook: "https://www.facebook.com/sakibur.rahman.895774",
       whatsapp: "https://wa.me/8801999446662"
     },
     {
       name: "Tahmid",
-      image: "/src/assets/Tahmid.jpg",
+      image: Tahmid,
       facebook: "https://www.facebook.com/tahmidahmed.fardin",
       whatsapp: "https://wa.me/8801948382226"
     },
     {
       name: "Mushfiq",
-      image: "/src/assets/Mushi.jpg",
+      image: Mushi,
       facebook: "https://www.facebook.com/mushfiqur.mystic007",
       whatsapp: "https://wa.me/8801234567895"
     },
     {
-      name: " Rifayet Rafi",
-      image: "/src/assets/Rafi.jpg",
+      name: "Rifayet Rafi",
+      image: Rafi,
       facebook: "https://www.facebook.com/rifayet.rafi",
       whatsapp: "https://wa.me/8801640652303"
     },
     {
       name: "Sajib Khan",
-      image: "/src/assets/Sajib.jpg",
+      image: Sajib,
       facebook: "https://www.facebook.com/mrASRkhan",
       whatsapp: "https://wa.me/8801601042820"
     },
     {
       name: "Sinthol Dey",
-      image: "/src/assets/Sinthol.jpg",
+      image: Sinthol,
       facebook: "https://www.facebook.com/Sinthol.Dey",
       whatsapp: "https://wa.me/8801884369307"
     },
     {
       name: "Nur Saad",
-      image: "/src/assets/Saad.jpg",
+      image: Saad,
       facebook: "https://www.facebook.com/nur.sad.52",
       whatsapp: "https://wa.me/8801884369307"
     },
