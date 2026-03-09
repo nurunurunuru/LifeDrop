@@ -26,7 +26,7 @@ const Hero = () => {
             
             <h5 className='flex items-center justify-center sm:justify-start 
               gap-x-2 uppercase tracking-widest 
-              text-red-400 text-[10px] xs:text-xs sm:text-sm md:text-base 
+              text-white text-[10px] xs:text-xs sm:text-sm md:text-base 
               font-semibold mb-2 sm:mb-3'>
               Donate Blood, Save Lives 
               <BsFire className='animate-pulse'/>
@@ -50,17 +50,22 @@ const Hero = () => {
 
             <div className='flex flex-col xs:flex-row justify-center sm:justify-start gap-2 xs:gap-3 sm:gap-6'>
               
-              <Link className='px-4 py-2 xs:px-5 xs:py-3 rounded-lg bg-red-500 
+               <a 
+                href="https://forms.gle/6bssSNG1mckUyZbUA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='px-4 py-2 xs:px-5 xs:py-3 rounded-lg bg-red-500 
                 text-white font-semibold shadow-lg 
-                hover:scale-105 transition-transform duration-300 text-xs xs:text-sm sm:text-base text-center'>
+                hover:scale-105 transition-transform duration-300 
+                text-xs xs:text-sm sm:text-base text-center'>
                 Become a Donor
-              </Link>
+              </a>
 
-              <Link className='px-4 py-2 xs:px-5 xs:py-3 rounded-lg bg-white/10 
+              {/* <Link className='px-4 py-2 xs:px-5 xs:py-3 rounded-lg bg-white/10 
                 backdrop-blur-md text-white border border-white/20 
                 hover:bg-white/20 transition text-xs xs:text-sm sm:text-base text-center'>
                 Find Blood
-              </Link>
+              </Link> */}
 
             </div>
 
