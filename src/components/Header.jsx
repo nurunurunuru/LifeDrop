@@ -32,9 +32,11 @@ const Header = () => {
         <div className='max-padd-container flexBetween'>
          {/* Logo */}
           <Link to={'/'} className=' text-2xl font-bold flex-1  xl:hidden'>
-             <h4 className='bg-white shadow-sm text-red-300 flexCenter h-28 w-28 px-2 absolute -top-5 rounded-full'>
-              LifeDrop
-            </h4>
+             <img
+            src={logo}
+            alt="LifeDrop Logo"
+            className="h-28 w-28 object-contain absolute -top-2 transition-all duration-300 hover:scale-105"
+           />
           </Link>
 
          {/* navbar */}
