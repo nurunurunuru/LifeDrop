@@ -8,6 +8,7 @@ import { GiBeachBag } from 'react-icons/gi'
 import { TbArrowNarrowRight } from 'react-icons/tb'
 import { useContext } from 'react'
 import { ShopContext } from '../context/ShopContext'
+import logo from '../assets/Logo.png'
 
 const Header = () => {
 
@@ -49,9 +50,11 @@ const Header = () => {
 
         {/* Logo */}
         <Link to={'/'} className='text-2xl font-bold flex-1 hidden  xl:flex'>
-             <h4 className='bg-red-50 shadow-sm text-red-500 flexCenter h-28 w-28 px-2 absolute -top-5 rounded-full'>
-              LifeDrop
-            </h4>
+            <img
+            src={logo}
+            alt="LifeDrop Logo"
+            className="h-28 w-28 object-contain absolute -top-2 transition-all duration-300 hover:scale-105"
+           />
           </Link>
 
           {/* right-side */}
